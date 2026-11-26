@@ -1,0 +1,96 @@
+
+        /* corpo do html*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(5, 4, 4);
+    background: #ffffff;
+    margin: 0;
+}
+header {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 0, 0);
+    padding: 10px;
+}
+h1 {
+    color: rgb(255, 0, 0);
+}
+footer {
+    text-align: center;
+    padding: 16px;
+    color: rgb(0, 0, 0);
+}
+        /* botao de acessar o cadastro */
+nav a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 16px;
+}
+nav a:hover {
+     text-decoration: underline;
+}
+.botao {
+    background: #000000;
+    color: #000000;
+    padding: 10px 18px;
+    border-radius:  8px;
+    text-decoration: none;
+}
+        /*cartões lado a lado*/
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+.cards {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+.cards .card {
+    margin: 0;
+}
+        /*formulario*/
+form {
+    max-width: 360px;
+    background: #961212;
+    padding:  20px;
+    border-radius: 12px;
+}
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 12px;
+}
+input, select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    box-sizing: border-box;
+        /*botão do formulario*/
+}
+button {
+    margin-top: 16px;
+    background: #e84;
+    color: #fff9f9;
+    border: 0;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+button:hover {
+    background: rgb(105, 1, 41);
+}
+        /*adaptação pra celular*/
+@media (max-width: 600px) {
+    .cards {
+        flex-direction: column;
+    }
+    .cards .card {
+        width: auto;
+    }
+    header {
+        text-align: center;
+    }
+}
